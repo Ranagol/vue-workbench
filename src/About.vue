@@ -1,9 +1,12 @@
 <template>
     <div>
-        <h1>About</h1>
+        <h3>About</h3>
+        <ButtonCounter></ButtonCounter>
+
     </div>
 </template>
 
-<script>
+<script setup>
+import ButtonCounter from '@/ButtonCounter.vue';
 
 </script>
