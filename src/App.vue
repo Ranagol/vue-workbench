@@ -1,33 +1,29 @@
 <template>
-  <div :class="myObject.color2">0</div>
+	<div class="home">
+		<h1>App.vue</h1>
+
+		<p>Navbar</p>
+
+		<div>
+
+			<div>Links are here:</div>
+			<RouterLink to="/about">About</RouterLink>
+			<span>||</span>
+			<RouterLink to="/home">Home</RouterLink>
+
+		</div>
+
+		<div>
+			<RouterView></RouterView>
+		</div>
+
+	</div>
 </template>
 
 <script setup>
-import { reactive } from 'vue';
 
-let myObject = reactive({
-  color2: 'purple'
-});
+
 
 
 
 </script>
-
-<style scoped>
-
-
-.purple {
-  width: 100px;
-  height: 100px;
-  background-color: purple;
-  display: inline-block;
-  margin: 10px;
-}
-
-.green {
-  background-color: green;
-  width: 100px;
-  height: 100px;
-}
-
-</style>
