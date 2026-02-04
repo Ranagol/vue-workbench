@@ -1,6 +1,13 @@
 <template>
 	<div class="home">
 		<h1>App.vue</h1>
+        <PropsReceiver 
+            :message="data.propsMessage"
+        ></PropsReceiver>
+
+        <p>{{ data.message }}</p>
+
+        <hr>
 
 		<div>
 
@@ -18,6 +25,13 @@
 </template>
 
 <script setup>
+import { reactive } from 'vue';
+import PropsReceiver from './PropsReceiver.vue';
+
+let data = reactive({
+    message: "Reactive data testing successfull!",
+    propsMessage: "Props testing successfull!"
+});
 
 
 
